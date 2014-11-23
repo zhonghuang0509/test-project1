@@ -1,6 +1,6 @@
 Template.receivedList.helpers({
   receives: function() {
-  	return Receives.find();
+  	return Receives.find({}, {sort: {'message-timestamp': -1}});
   }
 });
 
