@@ -1,0 +1,19 @@
+<template name="sendMessage">
+	<form class="main_form">
+		<div class="form-group {{errorClass 'tophone'}}">
+			<label class="control-label" for="tophone">Receiver Phone Number</label>
+			<div class="controls">
+				<input id="tophone" name="tophone" value="" placeholder="Input receiver phone number" size="50" class="form-control"/>
+				<span class="help-block">{{errorMessage 'tophone'}}</span>
+			</div>
+		</div>
+		<div class="form-group {{errorClass 'cont'}}">
+			<label class="control-label" for="cont">Message</label>
+			<div class="controls">
+				<input id="cont" name="cont" value="" placeholder="Input message content" class="form-control"/>
+				<span class="help-block">{{errorMessage 'cont'}}</span>
+			</div>
+		</div>
+		<input type="submit" value="Send Message" class="btn btn-primary"/>
+	</form>
+</template>

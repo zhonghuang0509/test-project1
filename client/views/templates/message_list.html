@@ -1,0 +1,10 @@
+<template name="messageList">
+  <div class="posts">
+    {{#each posts}}
+      {{> postItem}}
+    {{/each}}
+  </div>
+  <div class="posts">
+  	<center><button id="delButton" class="discuss btn btn-default">Delete</button></center>
+  </div>
+</template>

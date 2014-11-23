@@ -1,0 +1,22 @@
+<template name="receivedList">
+  <div class="posts">
+    {{#each receives}}
+      {{> receivedItem}}
+    {{/each}}
+
+<!--     {{#each posts}}
+      {{> postItem}}
+    {{/each}} -->
+  </div>
+  <div class="posts">
+  	<center><button id="delButton" class="discuss btn btn-default">Delete</button></center>
+  </div>
+</template>
+
+<template name="receivedItem">
+	<div class="post">
+	    <div class="post-content">
+	      <h3>{{text}}</h3><h4>{{to}}</h4>
+	    </div>
+  	</div>
+</template>
